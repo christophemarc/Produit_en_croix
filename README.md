@@ -8,7 +8,7 @@ Cette petite application transforme une note en **note sur 20** grâce au produi
 
 ## 🌐 Le plus simple : utiliser l'application en ligne
 
-👉 **[▶️ Ouvrir la démo en ligne]([https://christophemarc.github.io/Produit_en_croix/](https://christophemarc.github.io/Produit_en_croix/version-locale/index.html)**
+👉 **[▶️ Ouvrir la démo en ligne]([https://christophemarc.github.io/Produit_en_croix/](https://christophemarc.github.io/Produit_en_croix/version-locale/index.html))**
 
 - ✅ Rien à installer
 - 🌍 Il suffit d'un navigateur et d'une connexion Internet
