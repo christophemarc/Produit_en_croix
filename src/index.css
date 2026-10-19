@@ -1,0 +1,218 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-paper: #f7f1e4;
+  --color-paper-deep: #ede4d2;
+  --color-paper-edge: #ded2bb;
+  --color-ink: #1e2f55;
+  --color-ink-soft: #55628a;
+  --color-warm: #6b6250;
+  --color-vermillion: #c8412b;
+  --color-vermillion-soft: #e0705a;
+  --color-graphite: #21293b;
+  --color-graphite-soft: #323d54;
+  --color-brass: #c69a4e;
+  --color-forest: #2e6b54;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-feature-settings: "kern" 1;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(200, 65, 43, 0.18);
+}
+
+/* ——— petites capitales traquées, la voix des étiquettes ——— */
+.label {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+/* ——— papier Seyès ——— */
+.seyes {
+  background-image:
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0 31px,
+      rgba(46, 78, 132, 0.16) 31px 32px
+    ),
+    repeating-linear-gradient(
+      to right,
+      transparent 0 31px,
+      rgba(112, 88, 176, 0.075) 31px 32px
+    );
+  background-position: 0 6px;
+}
+
+/* ——— trait de stylo rouge, sous le résultat ——— */
+.pen-stroke path {
+  stroke-dasharray: 420;
+  stroke-dashoffset: 420;
+  animation: draw 620ms cubic-bezier(0.22, 0.68, 0.35, 1) forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes settle {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.965);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(0) scale(1.008);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.settle {
+  animation: settle 380ms cubic-bezier(0.2, 0.75, 0.3, 1) both;
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 14px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.toast-in {
+  animation: toast-in 220ms ease-out both;
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.35;
+    transform: scale(0.8);
+  }
+}
+
+.pulse-dot {
+  animation: pulse-dot 1.8s ease-in-out infinite;
+}
+
+/* ——— champs à remplir, façon case de feuille ——— */
+.blank {
+  background-color: rgba(255, 255, 255, 0.42);
+  border-bottom: 3px solid rgba(30, 47, 85, 0.32);
+  border-radius: 3px 3px 0 0;
+  transition:
+    border-color 160ms ease,
+    background-color 160ms ease,
+    box-shadow 160ms ease;
+  outline: none;
+}
+
+.blank:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.blank:focus {
+  background-color: #fffdf7;
+  border-bottom-color: var(--color-vermillion);
+  box-shadow: 0 6px 18px -12px rgba(200, 65, 43, 0.55);
+}
+
+.blank::placeholder {
+  color: rgba(30, 47, 85, 0.24);
+}
+
+/* ——— calculette : touches ——— */
+.key {
+  position: relative;
+  border-radius: 11px;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  transition:
+    transform 90ms ease,
+    box-shadow 120ms ease,
+    filter 120ms ease;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    0 2px 0 rgba(12, 18, 32, 0.45),
+    0 6px 12px -8px rgba(0, 0, 0, 0.55);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.key:hover {
+  filter: brightness(1.05);
+}
+
+.key:active,
+.key[data-active="true"] {
+  transform: translateY(2px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.28),
+    0 0 0 rgba(12, 18, 32, 0.45);
+}
+
+.key:focus-visible {
+  outline: 2px solid var(--color-brass);
+  outline-offset: 2px;
+}
+
+.lcd {
+  background:
+    linear-gradient(180deg, #e9e2cf 0%, #ded6c0 100%);
+  box-shadow:
+    inset 0 2px 6px rgba(30, 47, 85, 0.22),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.5);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .pen-stroke path {
+    stroke-dashoffset: 0;
+  }
+}
