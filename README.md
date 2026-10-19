@@ -14,8 +14,6 @@ Cette petite application transforme une note en **note sur 20** grâce au produi
 - 🌍 Il suffit d'un navigateur et d'une connexion Internet
 - 🚀 C'est la méthode la plus rapide pour un usage ponctuel
 
-> 🔄 **Dépôt renommé :** le projet s'appelle désormais `Produit_en_croix` (anciennement `Produit_en_croix_en_ligne`). Toutes les adresses ci-dessous ont été mises à jour.
-
 > 📴 **Vous préférez travailler sans Internet ?** Suivez les étapes **1** et **2** ci-dessous pour installer la version hors ligne sur votre ordinateur.
 > 🛠️ **Vous voulez modifier le programme ?** Rendez-vous directement à la section **6**.
 
