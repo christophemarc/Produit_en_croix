@@ -16,5 +16,50 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <!--
+      Garde « double-clic » : ce fichier index.html est le code SOURCE (React/Vite).
+      Ouvert tel quel (file://), le navigateur ne peut pas exécuter le TypeScript
+      de /src/main.tsx → page blanche. Ce script détecte ce cas et renvoie vers
+      la version autonome hors ligne (version-locale/index.html).
+      Il est inactif en http(s) : site en ligne et « npm run dev » inchangés.
+      Il est retiré automatiquement de la version locale par scripts/build-local.mjs.
+    -->
+    <script id="garde-fichier-local">
+      (function () {
+        if (window.location.protocol !== "file:") return;
+        function verifier() {
+          var root = document.getElementById("root");
+          if (root && root.children.length > 0) return; // l'app a démarré : rien à faire
+          var div = document.createElement("div");
+          div.setAttribute(
+            "style",
+            "position:fixed;inset:0;background:#F7F1E4;color:#1E2F55;display:flex;align-items:center;justify-content:center;font-family:Georgia,'Times New Roman',serif;padding:24px;box-sizing:border-box;z-index:9999;"
+          );
+          div.innerHTML =
+            '<div style="max-width:560px;text-align:center;">' +
+            '<p style="font-size:2rem;margin:0 0 12px;">Produit en croix</p>' +
+            '<p style="font-family:Verdana,Geneva,sans-serif;font-size:0.95rem;line-height:1.6;">' +
+            "Ce fichier est le <strong>code source</strong> du projet (React/Vite) : " +
+            "ouvert par double-clic, il ne peut pas démarrer tout seul.<br /><br />" +
+            "Pour utiliser l’application <strong>hors ligne</strong>, ouvrez la version autonome :" +
+            "</p>" +
+            '<p style="margin:22px 0;">' +
+            '<a href="version-locale/index.html" style="background:#C8412B;color:#FFF7EA;padding:12px 22px;border-radius:999px;text-decoration:none;font-family:Verdana,Geneva,sans-serif;font-size:1rem;">Ouvrir la version locale</a>' +
+            "</p>" +
+            '<p style="font-family:Verdana,Geneva,sans-serif;font-size:0.8rem;color:#55628A;line-height:1.6;">' +
+            "(dossier <code>version-locale</code>, fichier <code>index.html</code> — " +
+            "ce seul fichier peut aussi être copié sur le Bureau ou une clé USB)" +
+            "</p></div>";
+          document.body.appendChild(div);
+        }
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(verifier, 1500);
+          });
+        } else {
+          setTimeout(verifier, 1500);
+        }
+      })();
+    </script>
   </body>
 </html>

@@ -1,0 +1,27 @@
+PRODUIT EN CROIX — VERSION LOCALE (HORS LIGNE)
+==============================================
+
+Pour utiliser l'application sans internet, ouvrez simplement le fichier :
+
+    index.html     (double-clic, dans ce dossier)
+
+Il s'ouvre dans votre navigateur habituel (Chrome, Edge, Firefox…)
+et fonctionne entièrement hors ligne : aucun téléchargement,
+aucune connexion requise, aucune installation.
+
+ASTUCE
+------
+Ce fichier index.html est autonome : il contient déjà tout
+(code, mise en page, images et polices de caractères).
+Vous pouvez le copier SEUL où vous voulez — sur le Bureau Windows,
+dans vos documents, sur une clé USB — puis le renommer à votre goût
+(par exemple « Produit en croix.html ») et double-cliquer dessus.
+
+EN CAS DE MODIFICATION DU LOGICIEL
+----------------------------------
+Ce fichier est généré automatiquement depuis le code source du projet.
+Après une modification du code, régénérez-le avec la commande :
+
+    npm run build:local
+
+(voir le fichier README.md à la racine du projet pour les détails).
