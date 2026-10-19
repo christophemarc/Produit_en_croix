@@ -80,7 +80,7 @@ Le fichier s'ouvre dans votre navigateur habituel (par exemple Firefox, Chrome o
 
 ## 3. 👀 À quoi ressemble l'application ?
 
-![Capture d'écran de l'application Produit en croix, avec la saisie des points, la note calculée sur 20 et la calculatrice intégrée](docs/capture-application.png)
+![Capture d'écran de l'application Produit en croix, avec la saisie des points, la note calculée sur 20 et la calculatrice intégrée](capture-application.png)
 
 La capture montre les principales zones :
 
