@@ -33,7 +33,7 @@ Cette étape sert à copier le projet sur votre Bureau. Choisissez les instructi
    git clone https://github.com/christophemarc/produit_en_croix.git
    ```
 
-Le dossier `Produit_en_croix` sera créé sur votre Bureau. 🎉
+Le dossier `produit_en_croix` sera créé sur votre Bureau. 🎉
 
 > **Si la commande `git` n'est pas reconnue :** Git n'est probablement pas installé. Vous pouvez l'installer depuis [git-scm.com/downloads](https://git-scm.com/downloads), puis recommencer. Autre possibilité, sans installer Git : utilisez l'alternative **Download ZIP** présentée juste après les instructions Linux. 📦
 
