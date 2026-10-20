@@ -47,7 +47,7 @@ Le dossier `Produit_en_croix` sera créé sur votre Bureau. 🎉
    git clone https://github.com/christophemarc/produit_en_croix.git
    ```
 
-Le dossier `Produit_en_croix` sera créé sur le Bureau. `xdg-user-dir DESKTOP` retrouve automatiquement le dossier du Bureau, même s'il porte un nom localisé, par exemple `Bureau`. 🎉
+Le dossier `produit_en_croix` sera créé sur le Bureau. `xdg-user-dir DESKTOP` retrouve automatiquement le dossier du Bureau, même s'il porte un nom localisé, par exemple `Bureau`. 🎉
 
 > **Si `xdg-user-dir` n'existe pas :** essayez `cd ~/Desktop` ou `cd ~/Bureau`, selon le nom du dossier présent dans votre dossier personnel. Si `git` n'est pas installé, installez-le à l'aide du gestionnaire de logiciels de votre distribution, ou utilisez l'option **Code → Download ZIP** présentée ci-dessous. 📦
 
@@ -66,7 +66,7 @@ Si vous ne voulez pas installer Git, c'est la méthode la plus simple :
 
 ## 2. 🚀 Ouvrir l'application hors ligne
 
-1. Ouvrez le dossier `Produit_en_croix` créé sur votre Bureau.
+1. Ouvrez le dossier `produit_en_croix` créé sur votre Bureau.
 2. Ouvrez le sous-dossier `version-locale`.
 3. Faites un **double-clic sur `index.html`**. 🖱️
 
@@ -153,7 +153,7 @@ Après `npm run dev`, le terminal indique l'adresse locale à ouvrir dans le nav
 
 ### 🌐 (Re)mettre la démo en ligne avec GitHub Pages
 
-Le dépôt ayant été renommé, la démo se trouve désormais à cette adresse : **https://christophemarc.github.io/Produit_en_croix/**
+Le dépôt ayant été renommé, la démo se trouve désormais à cette adresse : **https://christophemarc.github.io/produit_en_croix/**
 
 Si la page ne s'affiche plus après le renommage :
 
@@ -182,6 +182,6 @@ Si la page ne s'affiche plus après le renommage :
 
 ## 💬 Signaler un problème ou proposer une amélioration
 
-Vous pouvez utiliser l'onglet **Issues** du dépôt GitHub : 👉 [github.com/christophemarc/Produit_en_croix/issues](https://github.com/christophemarc/produit_en_croix/issues)
+Vous pouvez utiliser l'onglet **Issues** du dépôt GitHub : 👉 [github.com/christophemarc/produit_en_croix/issues](https://github.com/christophemarc/produit_en_croix/issues)
 
 Merci pour vos retours ! 🙏
