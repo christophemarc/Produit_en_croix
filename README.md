@@ -8,7 +8,7 @@ Cette petite application transforme une note en **note sur 20** grâce au produi
 
 ## 🌐 Le plus simple : utiliser l'application en ligne
 
-👉 **[▶️ Ouvrir la démo en ligne](https://christophemarc.github.io/Produit_en_croix/version-locale/index.html)**
+👉 **[▶️ Ouvrir la démo en ligne](https://christophemarc.github.io/produit_en_croix/version-locale/index.html)**
 
 - ✅ Rien à installer
 - 🌍 Il suffit d'un navigateur et d'une connexion Internet
@@ -55,7 +55,7 @@ Le dossier `Produit_en_croix` sera créé sur le Bureau. `xdg-user-dir DESKTOP` 
 
 Si vous ne voulez pas installer Git, c'est la méthode la plus simple :
 
-1. Ouvrez la page du projet : [github.com/christophemarc/Produit_en_croix](https://github.com/christophemarc/Produit_en_croix)
+1. Ouvrez la page du projet : [github.com/christophemarc/Produit_en_croix](https://github.com/christophemarc/produit_en_croix)
 2. Cliquez sur le bouton vert **Code**.
 3. Cliquez sur **Download ZIP**.
 4. Décompressez l'archive téléchargée et placez le dossier obtenu sur votre Bureau.
@@ -182,6 +182,6 @@ Si la page ne s'affiche plus après le renommage :
 
 ## 💬 Signaler un problème ou proposer une amélioration
 
-Vous pouvez utiliser l'onglet **Issues** du dépôt GitHub : 👉 [github.com/christophemarc/Produit_en_croix/issues](https://github.com/christophemarc/Produit_en_croix/issues)
+Vous pouvez utiliser l'onglet **Issues** du dépôt GitHub : 👉 [github.com/christophemarc/Produit_en_croix/issues](https://github.com/christophemarc/produit_en_croix/issues)
 
 Merci pour vos retours ! 🙏
