@@ -30,7 +30,7 @@ Cette étape sert à copier le projet sur votre Bureau. Choisissez les instructi
 
    ```powershell
    Set-Location "$HOME\Desktop"
-   git clone https://github.com/christophemarc/Produit_en_croix.git
+   git clone https://github.com/christophemarc/produit_en_croix.git
    ```
 
 Le dossier `Produit_en_croix` sera créé sur votre Bureau. 🎉
@@ -44,7 +44,7 @@ Le dossier `Produit_en_croix` sera créé sur votre Bureau. 🎉
 
    ```bash
    cd "$(xdg-user-dir DESKTOP)"
-   git clone https://github.com/christophemarc/Produit_en_croix.git
+   git clone https://github.com/christophemarc/produit_en_croix.git
    ```
 
 Le dossier `Produit_en_croix` sera créé sur le Bureau. `xdg-user-dir DESKTOP` retrouve automatiquement le dossier du Bureau, même s'il porte un nom localisé, par exemple `Bureau`. 🎉
@@ -118,7 +118,7 @@ Vérifiez que vous avez ouvert `version-locale/index.html`, et non le fichier `i
 
 ### Comment récupérer une mise à jour plus tard ? 🔄
 
-Reconnectez-vous à Internet, ouvrez un terminal dans le dossier `Produit_en_croix`, puis lancez :
+Reconnectez-vous à Internet, ouvrez un terminal dans le dossier `produit_en_croix`, puis lancez :
 
 ```bash
 git pull
@@ -129,7 +129,7 @@ Ouvrez ensuite à nouveau le fichier `version-locale/index.html`. Si le dépôt 
 > 🔁 **Si vous aviez cloné le projet avant le renommage du dépôt**, mettez à jour son adresse une seule fois, avant le `git pull` :
 >
 > ```bash
-> git remote set-url origin https://github.com/christophemarc/Produit_en_croix.git
+> git remote set-url origin https://github.com/christophemarc/produit_en_croix.git
 > ```
 
 ---
